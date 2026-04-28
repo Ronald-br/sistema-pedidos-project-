@@ -13,3 +13,5 @@ A integração entre frontend e backend foi feita através de requisições HTTP
 Em relação ao deploy, uma das dificuldades foi a necessidade de adaptar caminhos e garantir que o sistema funcionasse corretamente fora do ambiente local. Já o Docker tem como papel padronizar o ambiente de execução, garantindo que o sistema funcione da mesma forma em qualquer máquina, evitando problemas de configuração.
 
 De forma geral, o sistema evoluiu de um modelo simples para uma estrutura mais organizada, com melhor separação de responsabilidades, uso de padrões de projeto e integração adequada entre frontend e backend.
+
+Atualização para criação do Pull Request.

@@ -1,0 +1,15 @@
+# Sistema de Pedidos - Pastelaria
+
+## Justificativa Técnica
+
+Durante o desenvolvimento do sistema, alguns problemas da versão anterior foram resolvidos, como o uso de código desorganizado, ausência de separação de responsabilidades e dependência direta da interface. Antes, havia mistura de lógica de negócio com interface e repetição de código, o que dificultava manutenção e evolução. Com a nova versão, esses problemas foram corrigidos.
+
+A arquitetura em camadas melhorou o sistema ao separar bem cada parte. O backend ficou responsável pela lógica e manipulação dos dados, enquanto o frontend ficou apenas com a interface. Isso tornou o sistema mais organizado, fácil de entender e mais próximo de um padrão utilizado no mercado.
+
+Os padrões de projeto foram aplicados para melhorar a estrutura do código. O Factory foi utilizado para criar objetos de forma organizada, centralizando a criação de pedidos. O Singleton foi aplicado para garantir uma única instância, simulando uma conexão, evitando múltiplas criações desnecessárias. Também foi utilizado o padrão Repository para isolar o acesso aos dados em arquivo JSON, facilitando futuras mudanças.
+
+A integração entre frontend e backend foi feita através de requisições HTTP utilizando fetch no JavaScript. O frontend envia os dados para a API em PHP, que processa e armazena as informações. Essa comunicação acontece por meio de JSON, mantendo a separação entre as partes.
+
+Em relação ao deploy, uma das dificuldades foi a necessidade de adaptar caminhos e garantir que o sistema funcionasse corretamente fora do ambiente local. Já o Docker tem como papel padronizar o ambiente de execução, garantindo que o sistema funcione da mesma forma em qualquer máquina, evitando problemas de configuração.
+
+De forma geral, o sistema evoluiu de um modelo simples para uma estrutura mais organizada, com melhor separação de responsabilidades, uso de padrões de projeto e integração adequada entre frontend e backend.
